@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+/* PART 1 */
+
+#box-1 {
+  border: 1rem solid black;
+}
+
+.top-1 {
+  background-color: #2d4059;
+  display: flex;
+  padding: 1rem;
+  border-bottom: 0.5rem solid black;
+}
+
+.top-1 div {
+  background-color: #ea5455;
+  padding: 0.6rem;
+}
+
+.top-1 div:nth-child(1) {
+  flex-grow: 1;
+}
+.top-1 div:nth-child(2) {
+  flex-grow: 4;
+  margin: 0 1rem;
+}
+.top-1 div:nth-child(3) {
+  flex-grow: 1;
+}
+
+.bottom-1 {
+  padding: 1rem;
+  background-color: #f07b3f;
+}
+
+.bottom-1 div {
+  background-color: #fed460;
+  padding: 0.6rem;
+}
+
+/* END OF PART 1 */
