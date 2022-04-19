@@ -43,6 +43,8 @@
 
 /* END OF PART 1 */
 
+/* PART 2 */
+
 #box-2 {
   border: 1rem solid black;
   margin-top: 1rem;
@@ -92,3 +94,18 @@
   margin: 1rem;
   padding: 0.5rem;
 }
+
+/* END OF PART 2 */
+
+/* PART 3 */
+
+#box-3 {
+  border: 1rem solid black;
+  margin-top: 1rem;
+}
+
+#box-3 div {
+  background-color: #e6af2e;
+  padding: 0.52rem;
+}
+/* END OF PART 3 */
