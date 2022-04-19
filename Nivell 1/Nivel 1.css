@@ -52,10 +52,24 @@
   background-color: black;
 }
 
+@media (max-width: 768px) {
+  #box-2 {
+    flex-direction: column;
+    border-color: turquoise;
+    background-color: turquoise;
+  }
+}
+
 .left-2 {
   background-color: #4e4e6a;
   padding: 1rem;
   width: 80%;
+}
+
+@media (max-width: 768px) {
+  .left-2 {
+    width: 100%;
+  }
 }
 
 .row {
@@ -80,13 +94,24 @@
 
 .separator {
   width: 1rem;
-  background-color: black;
   padding: 0;
+}
+
+@media (max-width: 768px) {
+  .separator {
+    height: 1rem;
+  }
 }
 
 .right-2 {
   background-color: #f73f52;
   width: 20%;
+}
+
+@media (max-width: 768px) {
+  .right-2 {
+    width: 100%;
+  }
 }
 
 .right-2 div {
@@ -106,6 +131,7 @@
 
 #box-3 div {
   background-color: #e6af2e;
-  padding: 0.52rem;
+  padding: 0.5rem;
 }
+
 /* END OF PART 3 */
