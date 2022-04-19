@@ -17,7 +17,7 @@
 
 .top-1 div {
   background-color: #ea5455;
-  padding: 0.6rem;
+  padding: 0.5rem;
 }
 
 .top-1 div:nth-child(1) {
@@ -38,7 +38,57 @@
 
 .bottom-1 div {
   background-color: #fed460;
-  padding: 0.6rem;
+  padding: 0.5rem;
 }
 
 /* END OF PART 1 */
+
+#box-2 {
+  border: 1rem solid black;
+  margin-top: 1rem;
+  display: flex;
+  background-color: black;
+}
+
+.left-2 {
+  background-color: #4e4e6a;
+  padding: 1rem;
+  width: 80%;
+}
+
+.row {
+  display: flex;
+}
+
+.row div {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #1f6cb0;
+  flex: 1;
+}
+
+.row div:nth-child(1) {
+  margin-right: 1rem;
+}
+
+.full-row div {
+  padding: 0.5rem;
+  background-color: #70a3c4;
+}
+
+.separator {
+  width: 1rem;
+  background-color: black;
+  padding: 0;
+}
+
+.right-2 {
+  background-color: #f73f52;
+  width: 20%;
+}
+
+.right-2 div {
+  background-color: #feea85;
+  margin: 1rem;
+  padding: 0.5rem;
+}
