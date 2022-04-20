@@ -2,6 +2,10 @@
 
 :root {
   --font-main: "Source Sans Pro", monospace;
+
+  --content-bg-clr-dark: #d8d7d7;
+  --content-bg-clr-light: #f5f1f1;
+  --clr-accent: rgba(238, 116, 99, 1);
 }
 
 * {
@@ -156,7 +160,7 @@ main {
 
 .content-section {
   width: 80%;
-  background-color: lightgreen;
+  background-color: var(--content-bg-clr-dark);
   margin-right: 1rem;
 }
 @media (max-width: 868px) {
@@ -167,7 +171,7 @@ main {
 
 aside {
   width: 20%;
-  background-color: #f08080;
+  background-color: var(--content-bg-clr-dark);
   text-align: center;
   padding: 2rem;
 }
@@ -175,6 +179,53 @@ aside {
   aside {
     width: 100%;
   }
+}
+
+.content-row {
+  display: flex;
+}
+
+.blog-post {
+  width: 50%;
+  padding: 1rem;
+}
+
+.post-container {
+  padding: 0.5rem;
+  background-color: var(--content-bg-clr-light);
+}
+
+.post-container h4 {
+  color: white;
+  background-color: #f08080;
+  margin-top: 0.2rem;
+  padding: 0.4rem 0 0.1rem 0.2rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.post-container a {
+  display: block;
+  padding-top: 2rem;
+  color: gray;
+  text-decoration: none;
+}
+
+.blog-img {
+  height: 150px;
+  position: relative;
+}
+
+.post-date {
+  color: rgb(255, 255, 146);
+  position: absolute;
+  bottom: 0.1rem;
+  left: 0.2rem;
+}
+
+.blog-content {
+  padding: 0.4rem 0 0.1rem 0.2rem;
+  column-count: 2;
 }
 
 /*------ END OF MAIN SECTION ------*/
