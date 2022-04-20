@@ -11,6 +11,10 @@ body {
   margin: 0 7em;
 }
 
+html {
+  font-family: var(--font-main);
+}
+
 h1,
 h2,
 h3,
@@ -34,6 +38,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.1rem;
 }
 
 .logo-div {
@@ -41,7 +46,7 @@ ul {
 }
 
 .logo-div img {
-  width: 80px;
+  width: 70px;
 }
 
 .links-div {
@@ -51,6 +56,15 @@ ul {
 .ul-container {
   display: flex;
   justify-content: space-evenly;
+}
+
+.li-links a {
+  text-decoration: none;
+  color: lightslategray;
+}
+
+.icons {
+  margin-right: 0.3rem;
 }
 
 .social-div {
