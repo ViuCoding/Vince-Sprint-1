@@ -141,8 +141,14 @@
 
 .right-2 div {
   background-color: #feea85;
-  margin: 1rem;
   padding: 0.5rem;
+}
+
+.right-2 div:first-child {
+  margin: 1rem 1rem 0.5rem 1rem;
+}
+.right-2 div:last-child {
+  margin: 0 1rem 1rem 1rem;
 }
 
 /* END OF PART 2 */
