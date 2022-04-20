@@ -39,10 +39,18 @@ ul {
   justify-content: space-between;
   align-items: center;
   font-size: 1.1rem;
+  position: relative;
+}
+
+@media (max-width: 868px) {
+  #navbar {
+    flex-direction: column;
+  }
 }
 
 .logo-div {
   width: 20%;
+  text-align: center;
 }
 
 .logo-div img {
@@ -56,6 +64,13 @@ ul {
 .ul-container {
   display: flex;
   justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  .ul-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .li-links a {
@@ -74,4 +89,12 @@ ul {
 .ul-social {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 868px) {
+  .social-div {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
