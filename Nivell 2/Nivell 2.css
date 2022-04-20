@@ -112,7 +112,7 @@ ul {
 @media (max-width: 868px) {
   .social-div {
     position: absolute;
-    top: 0;
+    top: 1;
     right: 0;
   }
 }
@@ -142,3 +142,39 @@ ul {
 }
 
 /*------ END HEADER STYLING SECTION ------*/
+
+/*------ MAIN SECTION ------*/
+main {
+  margin-top: 1rem;
+  display: flex;
+}
+@media (max-width: 868px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+.content-section {
+  width: 80%;
+  background-color: lightgreen;
+  margin-right: 1rem;
+}
+@media (max-width: 868px) {
+  .content-section {
+    width: 100%;
+  }
+}
+
+aside {
+  width: 20%;
+  background-color: #f08080;
+  text-align: center;
+  padding: 2rem;
+}
+@media (max-width: 868px) {
+  aside {
+    width: 100%;
+  }
+}
+
+/*------ END OF MAIN SECTION ------*/
