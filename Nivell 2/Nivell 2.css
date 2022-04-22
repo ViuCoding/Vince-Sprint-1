@@ -15,6 +15,12 @@ body {
   margin: 0 7em;
 }
 
+@media (max-width: 1200px) {
+  body {
+    margin: 0 1rem;
+  }
+}
+
 html {
   font-family: var(--font-main);
 }
@@ -152,7 +158,7 @@ main {
   margin-top: 1rem;
   display: flex;
 }
-@media (max-width: 868px) {
+@media (max-width: 1100px) {
   main {
     flex-direction: column;
   }
@@ -163,7 +169,7 @@ main {
   background-color: var(--content-bg-clr-dark);
   margin-right: 1rem;
 }
-@media (max-width: 868px) {
+@media (max-width: 1100px) {
   .content-section {
     width: 100%;
   }
@@ -175,9 +181,14 @@ aside {
   text-align: center;
   padding: 2rem;
 }
-@media (max-width: 868px) {
+
+aside h3 {
+  padding-bottom: 2rem;
+}
+@media (max-width: 1100px) {
   aside {
     width: 100%;
+    margin-top: 1rem;
   }
 }
 
@@ -185,9 +196,20 @@ aside {
   display: flex;
 }
 
+@media (max-width: 1100px) {
+  .content-row {
+    flex-direction: column;
+  }
+}
+
 .blog-post {
   width: 50%;
   padding: 1rem;
+}
+@media (max-width: 1100px) {
+  .blog-post {
+    width: 100%;
+  }
 }
 
 .post-container {
@@ -228,10 +250,33 @@ aside {
   column-count: 2;
 }
 
+@media (max-width: 600px) {
+  .blog-content {
+    column-count: 1;
+  }
+}
+
 .extra-info {
   text-align: center;
   padding: 0.8rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /*------ END OF MAIN SECTION ------*/
+
+/*------ FOOTER SECTION ------*/
+
+footer {
+  background-color: var(--content-bg-clr-dark);
+  margin: 1rem 0;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.1rem;
+  background-color: var(--content-bg-clr-light);
+  padding: 1rem 0;
+  margin: 0 1rem;
+}
+
+/*------ END OF FOOTER SECTION ------*/
