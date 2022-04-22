@@ -86,20 +86,12 @@ ul {
 
 .logo-div img {
   width: 70px;
-  animation: spinningLogo 8s ease-in-out 2s infinite;
-  /* animation-name: spinningLogo;
-  animation-duration: 5s;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out; */
+  animation: blink 4s ease-in-out 2s infinite;
 }
 
-@keyframes spinningLogo {
-  from {
-    transform: rotateZ(0);
-  }
-  to {
-    transform: rotateZ(360deg);
+@keyframes blink {
+  50% {
+    opacity: 0.1;
   }
 }
 
