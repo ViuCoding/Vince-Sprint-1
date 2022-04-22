@@ -3,6 +3,7 @@
 :root {
   --font-main: "Source Sans Pro", monospace;
 
+  --ccontent-bg-clr-darker: lightslategrey;
   --content-bg-clr-dark: #d8d7d7;
   --content-bg-clr-light: #f5f1f1;
   --clr-accent: rgba(238, 116, 99, 1);
@@ -40,9 +41,21 @@ ul {
 /* HEADER STYLING SECTION */
 
 #header {
-  background: url("./images/header.jpg") center/cover no-repeat;
+  background: url("./images/header1.jpg") center/cover no-repeat;
   height: 60vh;
   position: relative;
+  animation: slideBg 30s ease-in-out infinite;
+}
+
+@keyframes slideBg {
+  0%,
+  100% {
+    background: url("./images/header1.jpg") center/cover no-repeat;
+  }
+
+  50% {
+    background: url("./images/header2.jpg") center/cover no-repeat;
+  }
 }
 
 #navbar {
@@ -113,12 +126,12 @@ ul {
 
 .li-links a {
   text-decoration: none;
-  color: lightslategray;
+  color: var(--clr-accent);
   transition: all 0.3s ease-in;
 }
 
 .li-links a:hover {
-  color: var(--clr-accent);
+  color: var(--ccontent-bg-clr-darker);
 }
 
 .icons {
@@ -158,14 +171,14 @@ ul {
   font-weight: 400;
   text-align: center;
   padding: 1rem 0 8rem 0;
-  animation: opacityChange 4s ease-in-out 2s infinite;
+  /* animation: opacityChange 4s ease-in-out 2s infinite; */
 }
 
-@keyframes opacityChange {
+/* @keyframes opacityChange {
   50% {
     opacity: 0.2;
   }
-}
+} */
 
 @media (max-width: 868px) {
   .cta h1 {
