@@ -3,10 +3,11 @@
 :root {
   --font-main: "Source Sans Pro", monospace;
 
-  --ccontent-bg-clr-darker: lightslategrey;
-  --content-bg-clr-dark: #d8d7d7;
-  --content-bg-clr-light: #f5f1f1;
-  --clr-accent: rgba(238, 116, 99, 1);
+  --clr-primary: #636363;
+  --clr-secondary: #d8d7d7;
+  --clr-secondary-light: #f5f1f1;
+  --clr-accent: #ee7463;
+  --clr-accent-2: #f08080;
 }
 
 * {
@@ -118,12 +119,12 @@ ul {
 
 .li-links a {
   text-decoration: none;
-  color: var(--clr-accent);
+  color: var(--clr-accent-2);
   transition: all 0.3s ease-in;
 }
 
 .li-links a:hover {
-  color: var(--ccontent-bg-clr-darker);
+  color: var(--clr-primary);
 }
 
 .icons {
@@ -157,7 +158,7 @@ ul {
 }
 .cta h1 {
   color: var(--clr-accent);
-  opacity: 0.7;
+  opacity: 0.6;
   font-size: 2.8rem;
   font-family: serif;
   font-weight: 400;
@@ -204,7 +205,7 @@ main {
 
 .content-section {
   width: 80%;
-  background-color: var(--content-bg-clr-dark);
+  background-color: var(--clr-secondary);
   margin-right: 1rem;
 }
 @media (max-width: 1100px) {
@@ -215,7 +216,7 @@ main {
 
 aside {
   width: 20%;
-  background-color: var(--content-bg-clr-dark);
+  background-color: var(--clr-secondary);
   text-align: center;
   padding: 2rem;
 }
@@ -252,31 +253,32 @@ aside h3 {
 
 .post-container {
   padding: 0.5rem;
-  background-color: var(--content-bg-clr-light);
+  background-color: var(--clr-secondary-light);
 }
 
 .post-container h4 {
   color: white;
-  background-color: #f08080;
+  background-color: var(--clr-accent-2);
   margin-top: 0.2rem;
-  padding: 0.4rem 0 0.1rem 0.2rem;
+  padding: 0.8rem 0 0.1rem 0.2rem;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .post-container a {
   display: block;
   padding-top: 2rem;
-  color: gray;
+  color: rgb(99, 99, 99);
   text-decoration: none;
   transition: all 0.3s ease-in;
 }
 .post-container a:hover {
-  color: var(--clr-accent);
+  color: var(--clr-accent-2);
 }
 
 .blog-img {
-  height: 150px;
+  height: 250px;
   position: relative;
 }
 
@@ -290,9 +292,10 @@ aside h3 {
 .blog-content {
   padding: 0.4rem 0 0.1rem 0.2rem;
   column-count: 2;
+  color: rgb(99, 99, 99);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .blog-content {
     column-count: 1;
   }
@@ -301,7 +304,7 @@ aside h3 {
 .extra-info {
   text-align: center;
   padding: 0.8rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /*------ END OF MAIN SECTION ------*/
@@ -309,14 +312,14 @@ aside h3 {
 /*------ FOOTER SECTION ------*/
 
 footer {
-  background-color: var(--content-bg-clr-dark);
+  background-color: var(--clr-secondary);
   margin: 1rem 0;
 }
 
 footer p {
   text-align: center;
   font-size: 1.1rem;
-  background-color: var(--content-bg-clr-light);
+  background-color: var(--clr-secondary-light);
   padding: 1rem 0;
   margin: 0 0.7rem;
 }
