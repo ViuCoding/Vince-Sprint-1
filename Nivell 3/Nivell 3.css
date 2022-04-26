@@ -45,7 +45,7 @@ ul {
   background: url("./images/header1.jpg") center/cover no-repeat;
   height: 60vh;
   position: relative;
-  animation: slideBg 30s ease-in-out infinite;
+  animation: slideBg 40s ease infinite;
 }
 
 @keyframes slideBg {
