@@ -93,6 +93,7 @@ ul {
 @keyframes blink {
   50% {
     opacity: 0.1;
+    transform: translateY(-10px);
   }
 }
 

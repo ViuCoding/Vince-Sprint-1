@@ -84,7 +84,8 @@ ul {
 
 @keyframes blink {
   50% {
-    opacity: 0.1;
+    opacity: 0.3;
+    transform: translateY(-10px);
   }
 }
 
@@ -150,13 +151,6 @@ ul {
   font-weight: 400;
   text-align: center;
   padding: 1rem 0 8rem 0;
-  animation: opacityChange 2s ease-in-out 2s infinite;
-}
-
-@keyframes opacityChange {
-  50% {
-    opacity: 0.2;
-  }
 }
 
 @media (max-width: 868px) {
