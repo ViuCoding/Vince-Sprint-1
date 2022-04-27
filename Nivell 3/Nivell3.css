@@ -17,12 +17,6 @@ body {
   margin: 0 7em;
 }
 
-@media (max-width: 1200px) {
-  body {
-    margin: 0 1rem;
-  }
-}
-
 html {
   font-family: var(--font-main);
 }
@@ -97,12 +91,6 @@ ul {
   }
 }
 
-@media (max-width: 868px) {
-  #navbar {
-    grid-template-columns: 1fr;
-  }
-}
-
 .logo-div {
   text-align: center;
 }
@@ -126,17 +114,6 @@ ul {
   justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .ul-container {
-    grid-template-columns: 1fr;
-  }
-
-  .li-links {
-    margin-bottom: 0.3rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-}
-
 .li-links a {
   text-decoration: none;
   color: var(--clr-accent-2);
@@ -157,14 +134,6 @@ ul {
   justify-content: center;
 }
 
-@media (max-width: 868px) {
-  .social-div {
-    position: absolute;
-    top: 2rem;
-    right: 0;
-  }
-}
-
 .cta {
   position: absolute;
   bottom: 0;
@@ -183,13 +152,6 @@ ul {
   padding: 1rem 0 8rem 0;
 }
 
-@media (max-width: 868px) {
-  .cta h1 {
-    font-size: 2.4rem;
-    padding: 1rem 0 4rem 0;
-  }
-}
-
 /*------ END HEADER STYLING SECTION ------*/
 
 /*------ MAIN SECTION ------*/
@@ -199,20 +161,9 @@ main {
   grid-template-columns: 80% 20%;
 }
 
-@media (max-width: 1100px) {
-  main {
-    grid-template-columns: 1fr;
-  }
-}
-
 .content-section {
   background-color: var(--clr-secondary);
   margin-right: 1rem;
-}
-@media (max-width: 1100px) {
-  .content-section {
-    margin-right: 0;
-  }
 }
 
 aside {
@@ -224,21 +175,10 @@ aside {
 aside h3 {
   padding-bottom: 2rem;
 }
-@media (max-width: 1100px) {
-  aside {
-    margin-top: 1rem;
-  }
-}
 
 .content-row {
   display: grid;
   grid-template-columns: 50% 50%;
-}
-
-@media (max-width: 1100px) {
-  .content-row {
-    grid-template-columns: 1fr;
-  }
 }
 
 .blog-post {
@@ -290,12 +230,6 @@ aside h3 {
   font-size: 1.1rem;
 }
 
-@media (max-width: 768px) {
-  .blog-content {
-    column-count: 1;
-  }
-}
-
 .extra-info {
   text-align: center;
   padding: 0.8rem;
@@ -320,3 +254,74 @@ footer p {
 }
 
 /*------ END OF FOOTER SECTION ------*/
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+  body {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .content-section {
+    margin-right: 0;
+  }
+
+  aside {
+    margin-top: 1rem;
+  }
+
+  .content-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 868px) {
+  #navbar {
+    grid-template-columns: 1fr;
+  }
+
+  .social-div {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+  }
+
+  .cta h1 {
+    font-size: 2.4rem;
+    padding: 1rem 0 4rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .ul-container {
+    grid-template-columns: 1fr;
+  }
+
+  .li-links {
+    margin-bottom: 0.3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .blog-content {
+    column-count: 1;
+  }
+}
+
+@media (max-width: 400px) {
+  .cta h1 {
+    font-size: 1.5rem;
+    padding: 1rem 0 4rem 0;
+  }
+}
+@media (max-width: 300px) {
+  .cta h1 {
+    font-size: 1.5rem;
+    padding: 1rem 0 2rem 0;
+  }
+}
